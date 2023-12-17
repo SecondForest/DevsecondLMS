@@ -1,21 +1,19 @@
 package com.bach.devsecondlms;
 
  import org.springframework.beans.factory.annotation.Autowired;
-   import org.springframework.jdbc.core.JdbcTemplate;
-   import org.springframework.stereotype.Service;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+import javax.sql.DataSource;
 
-   @Service
-   public class OracleConnectionTestService {
+@Component
+public class DatabaseConnectionChecker implements CommandLineRunner {
 
-       private final JdbcTemplate jdbcTemplate;
+    @Autowired
+    private DataSource dataSource;
 
-       @Autowired
-       public OracleConnectionTestService(JdbcTemplate jdbcTemplate) {
-           this.jdbcTemplate = jdbcTemplate;
-       }
-
-       public void testDatabaseConnection() {
-           String result = jdbcTemplate.queryForObject("SELECT 'Connected to Oracle' FROM DUAL", String.class);
-           System.out.println("Result: " + result);
-       }
-   }
+    @Override
+    public void run(String... args) throws Exception {
+        System.out.println("DataSource: " + dataSource);
+        System.out.println("Connected to database!");
+    }
+}
