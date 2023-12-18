@@ -19,13 +19,15 @@ TEST 용 ID/PW :
 # [목차] 
 - [팀원 소개] 
 - [기술 스택] 
-- [개발 문서]
+- [개발 문서](https://docs.google.com/spreadsheets/d/1bSSFEi4_b_N5RnYDRBaKsqURJCKD_DbClAkbOguLFiI/edit?usp=sharing)
 - [아키텍처]
+- [화면정의서](https://www.figma.com/file/H62Mjv9D3OH7YC4Vph7uE1/Spring-Project?type=design&node-id=119%3A3&mode=design&t=pR4ga7L2u4UmC502-1)
 - [ERD]
 - [컨벤션]
 - [서비스 페이지]
 - [테스트]
 - [회고]
+</br>
 
 # 팀원 소개 
 ## 안형렬
