@@ -1,4 +1,4 @@
-package com.bach.devsecondlms.login.web;
+package com.bach.devsecondlms.controller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bach.devsecondlms.login.service.LoginService;
+import com.bach.devsecondlms.service.LoginService;
 
 @RestController
 @RequestMapping("/login")
