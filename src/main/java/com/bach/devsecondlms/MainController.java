@@ -1,4 +1,4 @@
-package com.bach.devsecondlms.main;
+package com.bach.devsecondlms;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

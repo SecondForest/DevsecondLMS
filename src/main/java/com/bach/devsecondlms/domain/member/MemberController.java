@@ -1,4 +1,4 @@
-package com.bach.devsecondlms.main.member;
+package com.bach.devsecondlms.domain.member;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
