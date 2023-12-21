@@ -1,12 +1,12 @@
-package com.bach.devsecondlms.login.service.impl;
+package com.bach.devsecondlms.domain.auth;
 
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.bach.devsecondlms.login.mapper.LoginMapper;
-import com.bach.devsecondlms.login.service.LoginService;
+import com.bach.devsecondlms.domain.auth.LoginMapper;
+import com.bach.devsecondlms.domain.auth.LoginService;
 
 @Service
 public class LoginServiceImpl implements LoginService {

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		var userId = document.getElementById('userId').value;
 		var password = document.getElementById('password').value;
 		var xhr = new XMLHttpRequest();
-		var url = 'http://localhost:8080/login/select';
+		var url = 'http://localhost:8080/select';
 
 		xhr.open('POST', url, true);
 		xhr.setRequestHeader('Content-Type', 'application/json');
@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function() {
 		};
 
 		// Ajax 요청 전송
-		var requestData = JSON.stringify({
+		var data = JSON.stringify({
 			userId: userId,
 			password: password
 		});
-		xhr.send(requestData);
+		xhr.send(data);
 	});
 });
 
