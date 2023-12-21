@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>내 정보</title>
 </head>
 <body>
-<!--내 정보 페이지-->
+<div layout:fragment="content">
+    <!--내 정보 페이지-->
+    <!--하다보니 JPA 스타일이네 MyBatis 스타일로 바꾸자-->
+    <!--센터로 바꾸자 나중에 버튼 넣어서 회원 정보 수정으로 가게~~-->
+    <div class="container">
+        <div class="my-3">
+            <div class="d-flex justify-content-center">
+                <h1>My Page</h1>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center" style="height: 390px">
+            <table class="type07">
+                <tbody>
+                <tr>
+                    <th scope="row">ID</th>
+                    <!--                <td th:text="${user.getMemberId()}"></td>-->
+                </tr>
+                <tr>
+                    <th scope="row">이름</th>
+                </tr>
+                <tr>
+                    <th scope="row">학과</th>
+                </tr>
+                <tr>
+                    <th scope="row">학생/교수</th>
+                </tr>
+                <tr>
+                    <th scope="row">성별</th>
+                </tr>
+                <tr>
+                    <th scope="row">email</th>
+                </tr>
+                <tr>
+                    <th scope="row">기본주소</th>
+                </tr>
+                <tr>
+                    <th scope="row">상세주소</th>
+                </tr>
+                <tr>
+                    <th scope="row">생년월일</th>
+                </tr>
+                <tr>
+                    <th scope="row">전화번호</th>
+                </tr>
+                </tbody>
+            </table>
+            <div class="py-2">
+                <button type="submit" class="btn btn-danger w-100">회원 정보 수정</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

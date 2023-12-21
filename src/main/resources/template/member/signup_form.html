@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="~{layouts/layout}">
 <head>
 	<meta charset="UTF-8">
 	<title>회원 가입</title>
@@ -69,6 +71,21 @@
 
 		<br>
 
+		<label for="inputName"><strong>학생 / 교수 선택히기 : </strong></label>
+
+		<div class="form-check-inline">
+			<label class="form-check-label" for="check3">
+				<input type="checkbox" class="form-check-input" id="check3" name="vehicle1" value="something" checked>학생
+			</label>
+		</div>
+		<div class="form-check-inline">
+			<label class="form-check-label" for="check4">
+				<input type="checkbox" class="form-check-input" id="check4" name="vehicle2" value="something">교수
+			</label>
+		</div>
+
+		<br>
+
 		<div class="form-label-group">
 			<label for="inputEmail"><strong>email</strong></label>
 			<input type="email" id="inputEmail" class="form-control" placeholder="email을 입력해주세요!">
@@ -107,7 +124,7 @@
 		<button class="btn btn-lg btn-primary btn-block" type="submit">회원가입</button>
 		<button class="btn btn-lg btn-danger btn-block" type="submit">취소</button>
 
-		<p class="mt-5 mb-3 text-muted text-center">&copy; 2023 DevSecond</p>
+<!--		<p class="mt-5 mb-3 text-muted text-center">&copy; 2023 DevSecond</p>-->
 	</form>
 
 </div>

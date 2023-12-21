@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>내 정보</title>
 </head>
 <body>
+<div layout:fragment="content">
 <!--시간표 <권한별 : 교수 / 학생 >-->
+<!--    권한 별로 시간표 끌어 올수 있게 하자-->
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">시간표</h2>
+
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th scope="col">시간</th>
+                <th scope="col">월</th>
+                <th scope="col">화</th>
+                <th scope="col">수</th>
+                <th scope="col">목</th>
+                <th scope="col">금</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">9:00 - 10:00</th>
+                <td>과목 A</td>
+                <td>과목 B</td>
+                <td></td>
+                <td>과목 C</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">10:00 - 11:00</th>
+                <td>과목 D</td>
+                <td>과목 E</td>
+                <td>과목 F</td>
+                <td></td>
+                <td>과목 G</td>
+            </tr>
+            <!-- 여기에 더 많은 시간표 항목을 추가할 수 있습니다. -->
+            </tbody>
+        </table>
+    </div>
+</div>
 </body>
 </html>

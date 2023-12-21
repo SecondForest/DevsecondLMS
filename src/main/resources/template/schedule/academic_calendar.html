@@ -1,10 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>학사 일정</title>
 </head>
 <body>
-<!--학사일정 페이지-->
+<div layout:fragment="content">
+    <!--흠,,,, 일단 기본 달력 넣긴 했는데 걍 달력 API 넣어서 일정 넣을 수 있게 하자-->
+    <!-- 학사 일정 -->
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">2023년 12월</h2>
+
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th scope="col">일</th>
+                <th scope="col">월</th>
+                <th scope="col">화</th>
+                <th scope="col">수</th>
+                <th scope="col">목</th>
+                <th scope="col">금</th>
+                <th scope="col">토</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <!-- 여기에 더 많은 날짜를 추가할 수 있습니다. -->
+            </tbody>
+        </table>
+    </div>
+</div>
 </body>
 </html>
