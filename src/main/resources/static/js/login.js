@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
 					// 성공적으로 응답을 받았을 때의 처리 (Success)
 					var responseData = JSON.parse(xhr.responseText);
 					console.log('조회 성공:', responseData);
+					if(responseData != "") {
+						window.location.href = '/comn/main/main';
+					}
 
 					// 여기에 응답 데이터를 이용한 후속 처리를 작성하세요.
 				} else {

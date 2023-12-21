@@ -1,4 +1,4 @@
-package com.bach.devsecondlms.comn.login;
+package com.bach.devsecondlms.comn.login.mapper;
 
 import java.util.Map;
 
