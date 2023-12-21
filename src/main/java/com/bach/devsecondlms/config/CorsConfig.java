@@ -1,4 +1,4 @@
-package com.bach.devsecondlms.global.config;
+package com.bach.devsecondlms.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

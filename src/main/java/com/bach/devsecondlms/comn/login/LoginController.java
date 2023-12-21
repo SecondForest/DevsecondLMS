@@ -1,4 +1,4 @@
-package com.bach.devsecondlms.domain.auth;
+package com.bach.devsecondlms.comn.login;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +17,7 @@ public class LoginController {
 
     @RequestMapping("/")
     public String main() {
-    	return "login";
+    	return "common/login";
     }
     
     @PostMapping("/select")

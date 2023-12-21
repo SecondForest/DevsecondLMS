@@ -1,4 +1,4 @@
-package com.bach.devsecondlms.domain.auth;
+package com.bach.devsecondlms.comn.login;
 
 import java.util.Map;
 

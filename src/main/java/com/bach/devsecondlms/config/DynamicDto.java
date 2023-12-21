@@ -1,4 +1,4 @@
-package com.bach.devsecondlms.global.config;
+package com.bach.devsecondlms.config;
 
 import java.util.Map;
 
