@@ -48,11 +48,9 @@ dependencies {
 //	DataBase
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     implementation 'com.oracle.database.jdbc:ojdbc8:21.3.0.0'
-    runtimeOnly 'com.oracle.database.jdbc:ojdbc11'
 
 //	ORM
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
 //	Security
     implementation 'org.springframework.boot:spring-boot-starter-security'
@@ -66,9 +64,6 @@ dependencies {
 //	ETC
     annotationProcessor 'org.projectlombok:lombok'
     compileOnly 'org.projectlombok:lombok'
-//	implementation 'org.webjars:webjars-locator-core'
-//	implementation 'org.webjars:jquery:3.6.0'
-//	implementation 'org.webjars:bootstrap:4.6.0'
 
 
 }

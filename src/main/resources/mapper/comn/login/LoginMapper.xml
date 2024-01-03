@@ -5,8 +5,8 @@
 <mapper namespace="com.bach.devsecondlms.comn.login.mapper.LoginMapper">
     <select id="select" resultType="java.util.Map">
         SELECT *
-          FROM STU001
-         WHERE STD_ID = #{userId}
+          FROM USER001
+         WHERE USER_ID = #{userId}
            AND PASSWORD = #{password}
     </select>
 </mapper>

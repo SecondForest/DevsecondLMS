@@ -3,6 +3,10 @@ window.onload = function() {
 
 }
 
+function movePage(url) {
+	location.href = url;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 	var signIn = document.getElementById('signIn');
 
@@ -19,10 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
 			if (xhr.readyState === 4) {
 				if (xhr.status === 200) {
 					// 성공적으로 응답을 받았을 때의 처리 (Success)
-					var responseData = JSON.parse(xhr.responseText);
-					console.log('조회 성공:', responseData);
-					if(responseData != "") {
-						window.location.href = '/comn/main/main';
+					// var responseData = JSON.parse(xhr.responseText);
+					if (xhr.responseText != "") {
+						movePage("/main");
+					} else {
+						alert("로그인에 실패하였습니다. 다시 시도해 주십시오.");
 					}
 
 					// 여기에 응답 데이터를 이용한 후속 처리를 작성하세요.

@@ -19,7 +19,12 @@ public class LoginController {
 
     @RequestMapping("/")
     public String login() {
-    	return "/comn/login/login";
+    	return "comn/login/login";
+    }
+    
+    @RequestMapping("/main")
+    public String main() {
+    	return "comn/main/main";
     }
     
     @PostMapping("/select")
